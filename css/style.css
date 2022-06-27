@@ -1,0 +1,37 @@
+/* hero section */
+
+#hero-full
+{
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/images/78.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#about
+{
+    background-image: url(https://mdbootstrap.com/img/Photos/Others/images/78.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* custom color */
+.bg-orange
+{
+    background-color: #EC872A !important;
+}
+
+.text-orange
+{
+    color: #EC872A !important;
+}
+
+.bg-green
+{
+    background-color: #3F9538 !important;
+}
+
+.text-green
+{
+    color: #3F9538 !important;
+}
