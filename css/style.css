@@ -54,19 +54,19 @@ i {
 
 #ads
 {
-    background-image: url(https://mdbootstrap.com/img/Photos/Others/images/78.jpg);
+    background-image: url("../images/proj/donate.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 #missionVision
 {
-    background: linear-gradient(-70deg, #FFFF 60%, rgba(0, 0, 0, 0) 60%), url(https://mdbootstrap.com/img/Photos/Others/images/78.jpg);
+    background: linear-gradient(-70deg, #FFFF 60%, rgba(0, 0, 0, 0) 60%), url("../images/proj/mission_vision.png");
 }
 
 #callToAction
 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.815)),       url("https://mdbootstrap.com/img/Photos/Others/images/78.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.815)),       url("../images/proj/calltoaction.jpg") center center no-repeat;
 
 /*  below values are optional */
  	background-attachment:fixed;
