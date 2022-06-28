@@ -127,6 +127,12 @@ ul li
   {
       background: #ffff;
   }
+  
+  #projects .img-fluid
+  {
+    height: 100% !important;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 572px) {
