@@ -75,6 +75,19 @@ i {
 	  -moz-background-size: cover;
 }
 
+
+
+/* nav */
+ul
+{
+  padding:0;
+}
+
+ul li
+{
+  list-style:none;
+}
+
 /* custom color */
 .bg-orange
 {
@@ -100,3 +113,46 @@ i {
 {
   transition-timing-function: linear;
 }
+
+
+
+@media (max-width: 991px) {
+  #mission, #vission, #circle, #findOutBtn
+  {
+    margin-left: 0 !important;
+    transition: ease;
+  }
+
+  #missionVision
+  {
+      background: #ffff;
+  }
+}
+
+@media (max-width: 572px) {
+
+  #circle
+  {
+    width:360px !important;
+    height: 360px !important;
+    margin: auto;
+  }
+
+  #mission, #vission, #circle, #findOutBtn
+  {
+    margin-left: 0 !important;
+    transition: ease;
+  }
+
+  #missionVision
+  {
+      background: #ffff;
+  }
+
+  hr
+  {
+    margin:auto;
+  }
+
+}
+

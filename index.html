@@ -40,13 +40,6 @@
 
               <div class=" collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <!-- <ul class="menu navbar-nav">
-                      <li><a class="active" aria-current="page" href="#">HOME</a></li>
-                      <li><a class="active" aria-current="page" href="#">PROJECTS</a></li>
-                      <li><a class="" aria-current="page" href="./about-us.html">PARTNERS</a></li>
-                      <li><a class="" aria-current="page" href="./contact-us.html">CONTACT US</a></li>
-                      <li><a class="" aria-current="page" href="./contact-us.html">DONATE NOW</a></li>
-                  </ul> -->
                   <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                       <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="#">Home
@@ -62,7 +55,7 @@
                     <li class="nav-item">
                       <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">contact us</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item bg-orange rounded">
                       <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">donate now</a>
                     </li>
                   </ul>
@@ -96,25 +89,7 @@
 
     <section id="partners" class="py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <span><strong>BE ONE OF US</strong></span>
-            <h2 class="text-orange font-weight-bold">OUR PARTNERS</h2>
-            <div class="swiper mySwiper">
-              <div class="swiper-wrapper text-center">
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"> </div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-          </div>
-        </div>
+        
 
         <div class="row py-5">
           <div class="col-md-6">
@@ -147,8 +122,8 @@
     <section id="missionVision">
       <div class="container">
         <div class="row">
-          <div id="about" class="col-md-4 py-5"> 
-            <div class="rounded-circle bg-white position-relative d-flex align-items-center justify-content-center" style="width:480px;height:480px;margin-left:180px;border:solid 20px #3F9538  !important">
+          <div id="about" class="col-lg-4 d-lg-block d-md-none py-5"> 
+            <div id="circle" class="rounded-circle bg-white position-relative d-flex align-items-center justify-content-center" style="width:480px;height:480px;margin-left:180px;border:solid 20px #3F9538  !important">
               <div class="d-block text-center">
                 <div>
                   <span class="display-3 text-orange">MISSION</span>
@@ -157,29 +132,31 @@
                   <span class="h2">AND</span>
                 </div>
                 <div>
-                  <span class="display-3 text-orange">VISON</span>
+                  <span class="display-3 text-orange">VISION</span>
                 </div>
               </div>
             </div>
         </div>
-        <div class="col-md-8" style="z-index: 10;">
-            <div id="mission" class="py-5" style="margin-left:250px;z-index:10">
-              <span><strong>OUR</strong></span>
-              <h2 class="text-orange font-weight-bold">MISSION</h2>
-              <hr class="text-green" style="height:3px;width: 50px;">
-              <p>
-                We aim to help and uplift Filipino farmers and fisherfolks through sustainable and inclusive projects towards a more productive agriculture sector of the country.
-              </p>
+        <div class="col-lg-8 col-md-12" style="z-index: 10;">
+            <div class="d-lg-block d-md-flex text-lg-start text-center">
+              <div id="mission" class="py-5 col-md-6" style="margin-left:250px;z-index:10">
+                <span><strong>OUR</strong></span>
+                <h2 class="text-orange font-weight-bold">MISSION</h2>
+                <hr class="text-green" style="height:3px;width: 50px;">
+                <p>
+                  We aim to help and uplift Filipino farmers and fisherfolks through sustainable and inclusive projects towards a more productive agriculture sector of the country.
+                </p>
+              </div>
+              <div id="vission" class="py-5 col-md-6" style="margin-left:250px">
+                <span><strong>OUR</strong></span>
+                <h2 class="text-orange font-weight-bold">VISION</h2>
+                <hr class="text-green" style="height:3px;width: 50px;">
+                <p>
+                  We aspire and envision positive changes in the state of life of our farmers and fisher folks -- better opportunities, better income and for them to finally get the recognition they deserve and no longer be called the unsung heroes. 
+                </p>
+              </div>
             </div>
-            <div id="vission" class="py-5" style="margin-left:250px">
-              <span><strong>OUR</strong></span>
-              <h2 class="text-orange font-weight-bold">VISION</h2>
-              <hr class="text-green" style="height:3px;width: 50px;">
-              <p>
-                We aspire and envision positive changes in the state of life of our farmers and fisher folks -- better opportunities, better income and for them to finally get the recognition they deserve and no longer be called the unsung heroes. 
-              </p>
-            </div>
-            <button class="btn btn-lg rounded bg-orange text-white " style="margin-left:250px">FIND OUT MORE</button>
+            <button id="findOutBtn" class="btn btn-lg rounded bg-orange text-white " style="margin-left:250px">FIND OUT MORE</button>
           </div>
         </div>
       </div>
@@ -276,7 +253,7 @@
           <div id="ads" class="col-md-3">
             <div class="col-12 text-center py-5">
               <button class="btn btn-lg rounded bg-orange text-white mb-5">DONATE NOW</button>
-              <h2 class="font-weight-bold text-white text-center" style="font-size: 60px;"><b>FOR <br>OUR <br>FARMERS</b></h2>
+              <h2 class="font-weight-bold text-white text-center"><b> <span style="font-size: 5vw;">FOR</span>  <br><span style="font-size: 5vw;">OUR</span>  <br><span style="font-size: 3vw;">FARMERS</span> </b></h2>
             </div>
           </div>
 
@@ -473,6 +450,28 @@
       </div>
     </section>
 
+    <section id="logo" class="py-5">
+      <div class="row">
+        <div class="col-12 text-center">
+          <span><strong>BE ONE OF US</strong></span>
+          <h2 class="text-orange font-weight-bold pb-3">OUR PARTNERS</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper text-center">
+              <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"> </div>
+              <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
+              <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
+              <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
+              <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="168" height="100"></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
     <section id="callToAction" class="py-5">
       <div class="container my-5">
         <div class="row">
@@ -484,6 +483,72 @@
         </div>
       </div>
     </section>
+
+    <footer class="pt-5 pb-1 text-lg-start text-center ">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 py-3">
+            <p class="text-center"><span>Get In <span>Touch</span> with Us </span></p>
+            <ul class="d-flex justify-content-center">
+              <li><a href="#" class="px-3"><span>Instagram</span></a></li>
+              <li><a href="#" class="px-3"><span>Facebook</span></a></li>
+              <li><a href="#" class="px-3"><span>Twitter</span></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <a class="me-2" href="#">
+              <img src="images/main_logo/fof_logo_1.png" class="pb-3" height="120" alt="TechnoFest" loading="lazy" style="margin-top: -1px;"/>
+              </a>
+              <p>
+                FOR OUR FARMERS’ LEARNING CENTER, 
+                BRGY. ANO, SAN CARLOS, 
+                PANGASINAN, 2420
+              </p>
+              <div class="pb-3">
+                <span><a href="#">forourfarmers.org@gmail.com</a></span>
+              </div>
+              <div class="pb-3">
+                <span class="pb-3"><a href="#">+63 (075) 636 8986</a></span>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+              <p class="text-orange"><span><b>PROJECTS</b></span></p>
+              <ul>
+                <li><a href="#"><span>Brigada Eskuwela</span></a></li>
+                <li><a href="#"><span>Gabay Program </span></a></li>
+                <li><a href="#"><span>Babali Media Literacy project </span></a></li>
+                <li><a href="#"><span>For our farmer's Scholarship </span></a></li>
+                <li><a href="#"><span>Project Sagip</span></a></li>
+                <li><a href="#"><span>Sponsor a Farmer</span></a></li>
+              </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <p class="text-orange"><span><b>PROJECTS</b></span></p>
+            <ul>
+              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Paypal </span></a></li>
+              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Landbank </span></a></li>
+              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">BPI </span></a></li>
+              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">BDO </span></a></li>
+              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Gcash </span></a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <p class="text-orange"><span><b>QUICKLINKS</b></span></p>
+            <ul>
+              <li><a href="#"><span>Home </span></a></li>
+              <li><a href="#"><span>Projects </span></a></li>
+              <li><a href="#"><span>Partners</span></a></li>
+              <li><a href="#"><span>Contact Us</span></a></li>
+              <li><a href="#"><span>Donate Now </span></a></li>
+            </ul>
+          </div>
+          <div class="col-12 text-center">
+            <hr>
+            <p>COPYRIGHT © 2020 FOR OUR FARMERS - ALL RIGHTS RESERVED.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
