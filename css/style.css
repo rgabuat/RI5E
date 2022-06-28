@@ -6,7 +6,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
 }
 
 #counter .col-md-4 {
@@ -27,18 +26,17 @@ i {
   font-size: 20px !Important;
 }
 
-@media (max-width: 991px) {
-    .col-md-4 {
+/* @media (max-width: 991px) {
+    #counter .col-md-4 {
     border-right: 0px dashed black;
     border-bottom: 1px dashed black;
-    /* width: 50%; */
     margin: auto auto;
   }
   
-.col-md-4:last-child {
+#counter .col-md-4:last-child {
     border-bottom: 0px dashed black;
   }
-}
+} */
 
 #hero-full
 {
@@ -66,6 +64,16 @@ i {
     background: linear-gradient(-70deg, #FFFF 60%, rgba(0, 0, 0, 0) 60%), url(https://mdbootstrap.com/img/Photos/Others/images/78.jpg);
 }
 
+#callToAction
+{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.815)),       url("https://mdbootstrap.com/img/Photos/Others/images/78.jpg") center center no-repeat;
+
+/*  below values are optional */
+ 	background-attachment:fixed;
+	background-size: cover;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+}
 
 /* custom color */
 .bg-orange
