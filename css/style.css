@@ -40,7 +40,7 @@ i {
 
 #hero-full
 {
-    background-image: url(https://mdbootstrap.com/img/Photos/Others/images/78.jpg);
+    background-image: url('../images/header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
