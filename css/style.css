@@ -74,6 +74,11 @@ i {
   background: linear-gradient(-70deg, #fff 60%, rgba(236, 135, 42, 1) 0%);
 }
 
+#brigadaDonate
+{
+  background: linear-gradient(-70deg, #fff 60%, rgba(63, 149, 56, 1) 0%);
+}
+
 #callToAction
 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.815)), url("../images/proj/calltoaction.jpg") center center no-repeat;
