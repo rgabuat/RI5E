@@ -144,6 +144,12 @@ i {
   background: linear-gradient(-70deg, #EC872A 60%, rgba(0, 0, 0, 0) 60%);
 }
 
+#contact_us
+{
+  background: linear-gradient(-70deg, #EC872A 60%, rgba(0, 0, 0, 0.815) 40%), url("../images/proj/mission_vision.png") center center no-repeat ;
+  background-size: cover;
+}
+
 #whyUs
 {
   background: linear-gradient(-70deg, #fff 60%, rgba(236, 135, 42, 1) 0%);
