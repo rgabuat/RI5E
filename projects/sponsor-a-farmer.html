@@ -27,12 +27,12 @@
   <body>
     
     <section id="hero-full">
-      <header>
+      <header style="z-index: 9999;">
         <!-- Navbar -->
         <nav class="nav navbar shadow-none navbar-expand-lg fixed-top">
             <div class="container">
-              <a class="navbar-brand me-2" href="#">
-                <img src="../images/main_logo/fof_logo_1.png" height="120" alt="For Our Farmers" loading="lazy" style="margin-top: -1px;"/>
+              <a class="navbar-brand me-2" href="./index.html">
+                <img src="../images/main_logo/fof_logo_1.png" height="120" alt="TechnoFest" loading="lazy" style="margin-top: -1px;"/>
                 </a>
               <button class="navbar-toggler text-orange"  type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -40,28 +40,16 @@
 
               <div class=" collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="#">Home
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="https://mdbootstrap.com/docs/jquery/" target="_blank">about</a>
-                      </li>
-                    <li class="nav-item">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="https://mdbootstrap.com/docs/jquery/" target="_blank">projects</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="https://mdbootstrap.com/docs/jquery/" target="_blank">partners</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank">contact us</a>
-                    </li>
-                    <li class="nav-item bg-orange rounded">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="https://mdbootstrap.com/education/bootstrap/" target="_blank">donate now</a>
-                    </li>
-                  </ul>
+                  <div class="navbar-nav">
+                    <ul class="menu navbar-nav">
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold " href="../index.html">Home</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold " href="../about.html">about us</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold active" href="../projects.html">projects</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="../partners.html">partners</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="../contact.html">contact us</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="../donate.html">donate now</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -73,31 +61,28 @@
             <div class="col-12">
                 <div class="d-flex justify-content-center align-items-center text-white" style="height:400px">
                     <div class="d-block text-center">
-                        <h1>SPONSOR-A-FARMER</h1>
+                        <h1 class="display-1">SPONSOR A FARMER</h1>
                     <!-- <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p> -->
                     </div>
                 </div>
             </div>
-          <!-- <div class="row">
-            <div class="col-md-8">
-              <span class="text-white">BAYANIHAN PARA SA MAGSASAKA</span>
-              <h1 class="text-white" style="font-size:80px"><b>FOR OUR FARMERS</b></h1>
-              <p class="text-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-              <button class="btn btn-lg rounded bg-orange text-white mt-5">SPONSOR A FARMER</button>
-            </div>
-            <div class="col-md-4 d-flex justify-content-end align-items-center">
-              <div class="socials position-fixed">
-                <ul class="soc_items">
-                  <li><a class="active" aria-current="page" href="#">TWITTER</a></li>
-                  <li><a class="active" aria-current="page" href="#">FACEBOOK</a></li>
-                  <li><a class="" aria-current="page" href="./about-us.html">INSTAGRAM</a></li>
-                </ul>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
+    <section id="nav-menu-2" class="bg-green text-white">
+      <div class="container-fluid py-4 ">
+        <ul class="d-lg-flex justify-content-lg-between m-0 d-lg-center">
+          <li><a href="../projects/brigada-eskuwela.html" class="text-uppercase text-white"><span><strong class="badge rounded-pill badge-light py-2 ">brigada eskuwela</strong></span></a></li>
+          <li><a href="../projects/project-sagip.html" class="text-uppercase text-orange"><span><strong class="badge rounded-pill badge-light py-2 ">project sagip</strong></span></a></li>
+          <li><a href="../projects/sponsor-a-farmer.html" class="text-uppercase text-white"><span><strong class="badge rounded-pill badge-light py-2 text-orange">sponsor a farmer</strong></span></a></li>
+          <li><a href="../projects/gabay-program.html" class="text-uppercase text-white"><span><strong class="badge rounded-pill badge-light py-2 ">gabay program</strong></span></a></li>
+          <li><a href="../projects/fof-iskolar.html" class="text-uppercase text-white"><span><strong class="badge rounded-pill badge-light py-2 ">fof's scholarship</strong></span></a></li>
+          <li><a href="../projects/Balibali-media-literacy-project.html" class="text-uppercase text-white"><span><strong class="badge rounded-pill badge-light py-2 ">bali bali program</strong></span></a></li>
+          <li><a href="../projects/fof-learning-center.html" class="text-uppercase text-white"><span><strong class="badge rounded-pill badge-light py-2 ">fof's learning center</strong></span></a></li>
+        </ul>
+      </div>
+    </section>
+
 
     <section id="showcase" class="py-5">
         <div class="container">
@@ -112,11 +97,94 @@
                     <p>
                       We help local farmers and fisherfolks by giving them grocery packs, term life insurance, hermetic technology bags which they can use to improve the shelf life of their product and water-bill subsidy for a month.
                       <br><br>
-                      By donating <strong>Php 500.00</strong> or <strong>11.00 USD</strong>, you can already sponsor a farmer and his/her family to receive grocery packs, term life insurance, hermetic technology bags and water-bill subsidy. 
+                      By donating <strong class="text-green h3">P 500.00</strong> or <strong class="text-green h3">$ 11.00 </strong>, you can already sponsor a farmer and his/her family to receive grocery packs, term life insurance, hermetic technology bags and water-bill subsidy. 
                     </p>
+
+                   <p class="pt-5">
+                    <span ><strong>Updated number of beneficiaries per province</strong></span>
+                    <h2 class=" font-weight-bold text-uppercase display-1">4,575 <span class="text-orange">farmers</span> </h2>
+                   </p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="process" class="py-5"> 
+      <div class="container ">
+        <div class="text-center">
+          <span><strong class="text-center">our process</strong></span>
+          <h2 class="text-orange font-weight-bold text-uppercase">Process of selecting farmer beneficiaries</h2>
+          <hr class="text-green m-auto" style="height:3px;width: 50px;">
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col-lg-4 col-md-6">
+              <p>
+                Our team will communicate with the Mayor's office or the local Agriculturist to get the list of farmers in different barangays.
+              </p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p>
+              We also communicate with the farmer leader to let them know how many farmers we are going to give per barangay.
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <p>
+            Once list of beneficiaries has been finalized we will let the farmer leader know the schedule of the dispatch.
+          </p>
+      </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="py-5"> 
+      <div class="container ">
+        <div class="text-center">
+          <span><strong class="text-uppercase">what we give</strong></span>
+          <h2 class="text-orange font-weight-bold text-uppercase">for selected beneficiaries</h2>
+          <hr class="text-green m-auto" style="height:3px;width: 50px;">
+        </div>
+        <div class="row mt-5 text-center">
+          <div class="col-lg-3 col-md-6">
+              <p>
+                Grocery Packs (each grocery packs costs Php500-Php550)
+              </p>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <p>
+              Free 1-year term life insurance (partner: Country Bankers Insurance Group or CBIG)
+            </p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <p>
+            One-month bill subsidy (Waves4Water)
+          </p>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <p>
+          Hermetic technology bags (5 bags each farmer)
+        </p>
+    </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <section id="counter" class=" py-5 my-5 bg-orange" >
+        <div class="row g-0">
+          <div class="col-md-4 text-white" >
+            <h1><span class="counter">3,085 </span></h1>
+            <h3>Pangasinan</h3>
+          </div> 
+          <div class="col-md-4 text-white">
+            <h1><span class="counter">1,290</span></h1>
+            <h3>Tarlac</h3>
+          </div>
+          <div class="col-md-4 text-white">
+            <h1><span class="counter">200</span></h1>
+            <h3>Misamis Oriental</h3>
+          </div>
+        </div>
+      </section>
     </section>
 
     <!-- donation channels -->
@@ -265,5 +333,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
     <script src="../js/swiper.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

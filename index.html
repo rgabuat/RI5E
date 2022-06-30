@@ -19,7 +19,8 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="./css/gallery.css">
 
     <!-- swiper -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -27,7 +28,7 @@
   <body>
     
     <section id="hero-full" class="vh-100">
-      <header>
+      <header style="z-index: 9999;">
         <!-- Navbar -->
         <nav class="nav navbar shadow-none navbar-expand-lg fixed-top">
             <div class="container">
@@ -40,54 +41,16 @@
 
               <div class=" collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./index.html">Home
-                        <span class="sr-only">(current)</span>
-                      </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./about.html">about</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./projects.html">projects</a>
-                    </li>
-
-                    <!-- <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="#"
-                        id="navbarDropdown"
-                        role="button"
-                        data-mdb-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        Dropdown
-                      </a>
-                     
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li>
-                          <a class="dropdown-item" href="./projects/">Action</a>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="#">Another action</a>
-                        </li>
-                        <li><hr class="dropdown-divider" /></li>
-                        <li>
-                          <a class="dropdown-item" href="#">Something else here</a>
-                        </li>
-                      </ul>
-                    </li> -->
-                    <li class="nav-item">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./partners.html">partners</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./contact.html" >contact us</a>
-                    </li>
-                    <li class="nav-item bg-orange rounded">
-                      <a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./donate.html" >donate now</a>
-                    </li>
-                  </ul>
+                  <div class="navbar-nav">
+                    <ul class="menu navbar-nav">
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold active" href="./index.html">Home</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./about.html">about us</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./projects.html">projects</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./partners.html">partners</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./contact.html">contact us</a></li>
+                        <li><a class="nav-link waves-effect waves-light text-white text-uppercase font-weight-bold" href="./donate.html">donate now</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -103,13 +66,13 @@
               <button class="btn btn-lg rounded bg-orange text-white mt-5">SPONSOR A FARMER</button>
             </div>
             <div class="col-md-4 d-flex justify-content-end align-items-center">
-              <div class="socials position-fixed">
+              <!-- <div class="socials position-fixed">
                 <ul class="soc_items">
                   <li><a class="active" aria-current="page" href="#">TWITTER</a></li>
                   <li><a class="active" aria-current="page" href="#">FACEBOOK</a></li>
                   <li><a class="" aria-current="page" href="./about-us.html">INSTAGRAM</a></li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -118,31 +81,31 @@
 
     <section id="partners" class="py-5">
       <div class="container">
-        
-
         <div class="row py-5">
-          <div class="col-md-6">
-            <div class="swiper logoSlider">
-              <div class="swiper-wrapper text-center">
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"> </div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
-                <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-pagination"></div>
+          <div class="col-md-4 d-flex align-items-center" style="padding: 50px 0; border-left: solid 5px #3F9538 ; border-top: solid 5px #3F9538 ;">
+              <div class="swiper logoSlider">
+                <div class="swiper-wrapper text-center">
+                  <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"> </div>
+                  <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
+                  <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
+                  <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
+                  <div class="swiper-slide"><img src="./images/main_logo/fof_logo_1.png" class="img-fluid"alt="" width="250" height="150"></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
           </div>
-          <div class="col-md-6">
-            <span><strong>SUPPORT US</strong></span>
-            <h2 class="text-orange font-weight-bold">People feeding us should never go hungry</h2>
-            <hr class="text-green" style="height:3px;width: 50px;">
-            <p>
-              We started as a COVID-19 donation drive initiative to help farmers who were greatly affected by the pandemic.
-              For our Farmers PH, Inc. is a youth-led, non-stock, non-profit organization which aims to help and uplift local farmers and fisherfolks.
-            </p>
+          <div class="col-md-8 d-flex align-items-center">
+           <div class="px-5">
+              <span><strong>SUPPORT US</strong></span>
+              <h2 class="text-orange font-weight-bold">People feeding us should never go hungry</h2>
+              <hr class="text-green" style="height:3px;width: 50px;">
+              <p>
+                We started as a COVID-19 donation drive initiative to help farmers who were greatly affected by the pandemic.
+                For our Farmers PH, Inc. is a youth-led, non-stock, non-profit organization which aims to help and uplift local farmers and fisherfolks.
+              </p>
+           </div>
           </div>
         </div>
       </div>
@@ -155,18 +118,18 @@
             <div id="circle" class="rounded-circle bg-white position-relative d-flex align-items-center justify-content-center" style="width:480px;height:480px;margin-left:180px;border:solid 20px #3F9538  !important">
               <div class="d-block text-center">
                 <div>
-                  <span class="display-3 text-orange">MISSION</span>
+                  <span class="display-3 text-orange"><strong>MISSION</strong></span>
                 </div>
                 <div>
-                  <span class="h2">AND</span>
+                  <span class="h2"><strong>AND</strong></span>
                 </div>
                 <div>
-                  <span class="display-3 text-orange">VISION</span>
+                  <span class="display-3 text-orange"><strong>VISION</strong></span>
                 </div>
               </div>
             </div>
         </div>
-        <div class="col-lg-8 col-md-12" style="z-index: 10;">
+        <div class="col-lg-8 col-md-12" style="z-index: 1;">
             <div class="d-lg-block d-md-flex text-lg-start text-center">
               <div id="mission" class="py-5 col-md-6" style="margin-left:250px;z-index:10">
                 <span><strong>OUR</strong></span>
@@ -185,15 +148,15 @@
                 </p>
               </div>
             </div>
-            <button id="findOutBtn" class="btn btn-lg rounded bg-orange text-white " style="margin-left:250px">FIND OUT MORE</button>
+            <a href="./about.html" id="findOutBtn" class="btn btn-lg rounded bg-green text-white " style="margin-left:250px">FIND OUT MORE</a>
           </div>
         </div>
       </div>
     </section>
 
     <section id="projects" class="py-5">
-      <div class="container">
-        <div class="col-12">
+      <div class="container" class="py-5">
+        <div class="col-12 py-5">
           <span><strong>WHAT'S NEW</strong></span>
           <h2 class="text-orange font-weight-bold">SEE OUR ONGOING INITIATIVES</h2>
           <hr class="text-green" style="height:3px;width: 50px;">
@@ -218,13 +181,12 @@
                     </div>
                     <div class="col-md-8">
                       <div class="card-body">
-                        <h5 class="card-title">Brigada Eskwela</h5>
+                        <h2 class="card-title">Brigada Eskwela</h2>
+                        <hr class="text-orange" style="height:3px;width: 50px;">
                         <p class="card-text">
                           For our Farmers Brigada Eskuwela is an initiative to help and support young farmers with their distance learning.
                         </p>
-                        <!-- <p class="card-text">
-                          <small class="text-muted">Last updated 3 mins ago</small>
-                        </p> -->
+                        <a href="./projects/brigada-eskuwela.html" id="findOutBtn" class="btn btn-lg rounded bg-green text-white mt-5">FIND OUT MORE</a>
                       </div>
                     </div>
                   </div>
@@ -240,8 +202,9 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">FOF Learning Center</h5>
+                    <hr class="text-orange" style="height:3px;width: 50px;">
                     <p class="card-text">FOF Learning center is equipped with desktop computers, printers and internet connection & it accommodates almost 150 students a week.</p>
-                    <a href="#!" class="btn btn-primary">Button</a>
+                    <a href="./projects/fof-learning-center.html" class="btn bg-green text-white">FIND OUT MORE</a>
                   </div>
                 </div>
               </div>
@@ -255,8 +218,9 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Balibali Media Literacy</h5>
-                    <p class="card-text">We acknowledge the need to educate and empower on the safe usage of the internet. It will motivate each other, most especially the youth, to become advocates in their communities.</p>
-                    <a href="#!" class="btn btn-primary">Button</a>
+                    <hr class="text-orange" style="height:3px;width: 50px;">
+                    <p class="card-text">We acknowledge the need to educate and empower on the safe usage of the internet. It will motivate each other, most especially the youth, to bec...</p>
+                    <a href="./projects/Balibali-media-literacy-project.html" class="btn bg-green text-white">FIND OUT MORE</a>
                   </div>
                 </div>
               </div>
@@ -270,8 +234,9 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title">Gabay Program</h5>
+                    <hr class="text-orange" style="height:3px;width: 50px;">
                     <p class="card-text">Gabay Program aims to help FOF high school and college scholars who are struggling with distance learning by providing necessary learning resources.</p>
-                    <a href="#!" class="btn btn-primary">Button</a>
+                    <a href="./projects/gabay-program.html" class="btn bg-green text-white">FIND OUT MORE</a>
                   </div>
                 </div>
               </div>
@@ -280,7 +245,7 @@
 
           <div id="ads" class="col-md-3">
             <div class="col-12 text-center py-5">
-              <button class="btn btn-lg rounded bg-orange text-white mb-5">DONATE NOW</button>
+              <a href="./donate.html" class="btn btn-lg rounded bg-orange text-white mb-5">DONATE NOW</a>
               <h2 class="font-weight-bold text-white text-center"><b> <span style="font-size: 5vw;">FOR</span>  <br><span style="font-size: 5vw;">OUR</span>  <br><span style="font-size: 3vw;">FARMERS</span> </b></h2>
             </div>
           </div>
@@ -290,7 +255,7 @@
       </div>
     </section>
 
-    <section id="counter" class=" py-5 bg-orange" >
+    <section id="counter" class=" py-5 my-5 bg-orange" >
       <div class="row g-0">
         <div class="col-md-4 text-white" >
           <h1><span class="counter">4,575</span></h1>
@@ -376,7 +341,7 @@
           </div>
         </div>
         <div class="col pt-4 text-center">
-          <button class="btn btn-lg rounded bg-green text-white ">DONATION CHANNELS</button>
+          <a href="./donate.html" class="btn btn-lg rounded bg-green text-white ">DONATION CHANNELS</a>
         </div>
       </div>
     </section>
@@ -415,99 +380,149 @@
 
 
     <section id="ourteam" class="py-5">
-      <div class="container">
+      <div class="container mt-5">
         <span><strong>WHO WE ARE</strong></span>
-        <hr class="text-green" style="height:3px;width: 50px;">
         <h2 class="text-orange font-weight-bold">MEET OUR TEAM</h2>
-            <div class="pb-3"></div>
+        <hr class="text-green" style="height:3px;width: 50px;">
+        
+            <div class="pb-5"></div>
             <div class="row">
-              <div class="col-lg-3 col-md-4 py-3 ">
-                <div class="member-info text-center">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/78.jpg" class="rounded-circle" alt="" width="180" height="180" style="object-fit: cover;"> 
-                  <div class="description py-3">
-                    <span class="h4">MEMBER NAME</span>
-                    <hr class="w-25 m-auto pb-1 text-green my-2">
-                    <span class="h5">POSITION</span>
+              <div class="col-md-3">
+                <article class="card card--1">
+                  <!-- <div class="card__info-hover">
+                    <svg class="card__like"  viewBox="0 0 24 24">
+                    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      <div class="card__clock-info">
+                        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+                        </svg><span class="card__time">15 min</span>
+                      </div>
+                  </div> -->
+                  <div class="card__img"></div>
+                  <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                  </a>
+                  <div class="card__info">
+                    <span class="card__category"> Founder and Head of Operations</span>
+                    <h3 class="card__title">ANJANETTE S. TADENA</h3>
+                    <!-- <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span> -->
                   </div>
-                </div>
+                </article>
               </div>
-              <div class="col-lg-3 col-md-4 py-3 ">
-                <div class="member-info text-center">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/78.jpg" class="rounded-circle" alt="" width="180" height="180" style="object-fit: cover;"> 
-                  <div class="description py-3">
-                    <span class="h4">MEMBER NAME</span>
-                    <hr class="w-25 m-auto pb-1 text-green my-2">
-                    <span class="h5">POSITION</span>
+              <div class="col-md-3">
+                <article class="card card--2">
+                  <!-- <div class="card__info-hover">
+                    <svg class="card__like"  viewBox="0 0 24 24">
+                    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      <div class="card__clock-info">
+                        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+                        </svg><span class="card__time">15 min</span>
+                      </div>
+                  </div> -->
+                  <div class="card__img"></div>
+                  <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                  </a>
+                  <div class="card__info">
+                    <span class="card__category"> Head of Operations - Tarlac</span>
+                    <h3 class="card__title">JORDAN G. CALURA</h3>
+                    <!-- <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span> -->
                   </div>
-                </div>
+                </article>
               </div>
-              <div class="col-lg-3 col-md-4 py-3 ">
-                <div class="member-info text-center">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/78.jpg" class="rounded-circle" alt="" width="180" height="180" style="object-fit: cover;"> 
-                  <div class="description py-3">
-                    <span class="h4">MEMBER NAME</span>
-                    <hr class="w-25 m-auto pb-1 text-green my-2">
-                    <span class="h5">POSITION</span>
+              <div class="col-md-3">
+                <article class="card card--3">
+                  <!-- <div class="card__info-hover">
+                    <svg class="card__like"  viewBox="0 0 24 24">
+                    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      <div class="card__clock-info">
+                        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+                        </svg><span class="card__time">15 min</span>
+                      </div>
+                  </div> -->
+                  <div class="card__img"></div>
+                  <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                  </a>
+                  <div class="card__info">
+                    <span class="card__category"> Head of Operations - Misamis Oriental</span>
+                    <h3 class="card__title">REZYL <br> JUMAWID</h3>
+                    <!-- <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span> -->
                   </div>
-                </div>
+                </article>
               </div>
-              <div class="col-lg-3 col-md-4 py-3 ">
-                <div class="member-info text-center">
-                  <img src="https://mdbootstrap.com/img/Photos/Others/images/78.jpg" class="rounded-circle" alt="" width="180" height="180" style="object-fit: cover;"> 
-                  <div class="description py-3">
-                    <span class="h4">MEMBER NAME</span>
-                    <hr class="w-25 m-auto pb-1 text-green my-2">
-                    <span class="h5">POSITION</span>
+              <div class="col-md-3">
+                <article class="card card--4">
+                  <!-- <div class="card__info-hover">
+                    <svg class="card__like"  viewBox="0 0 24 24">
+                    <path fill="#000000" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+                      </svg>
+                      <div class="card__clock-info">
+                        <svg class="card__clock"  viewBox="0 0 24 24"><path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+                        </svg><span class="card__time">15 min</span>
+                      </div>
+                  </div> -->
+                  <div class="card__img"></div>
+                  <a href="#" class="card_link">
+                    <div class="card__img--hover"></div>
+                  </a>
+                  <div class="card__info">
+                    <span class="card__category"> Head - Digital & Social Department</span>
+                    <h3 class="card__title">AILEEN S. TADENA</h3>
+                    <!-- <span class="card__by">by <a href="#" class="card__author" title="author">Celeste Mills</a></span> -->
                   </div>
-                </div>
+                </article>
               </div>
             </div>
-
+            <p class="py-5 text-center"><a href="./about.html" class="btn btn-lg rounded bg-green text-white ">SEE MORE</a></p>
       </div>
     </section>
 
     <section id="gallery">
-      <div class="container-fluid g-0">
-        <div class="swiper gallerySlider">
-          <div class="swiper-wrapper text-center">
-            <div class="swiper-slide"><img src="./images/proj/g6.jpg" alt="" height="350"> </div>
-            <div class="swiper-slide"><img src="./images/proj/g7.jpeg" alt="" height="350"></div>
-            <div class="swiper-slide"><img src="./images/proj/g8.JPG" alt="" height="350"></div>
-            <div class="swiper-slide"><img src="./images/proj/g9.JPG" alt="" height="350"></div>
-            <div class="swiper-slide"><img src="./images/proj/g10.jpg" alt="" height="350"></div>
-          </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+      <div class="demo container-fluid g-0">
+        <div id="imgrid">
+            <img src="./images/proj/g6.jpg" alt="Gallery Sample 2" category="Sample 3">
+            <img src="./images/proj/g7.jpeg" alt="Gallery Sample 2" category="Sample 3">
+            <img src="./images/proj/g8.JPG" alt="Gallery Sample 3" category="Sample 1">
+            <img src="./images/proj/g9.JPG" alt="Gallery Sample 4" category="Sample 1">
+            <img src="./images/proj/g3.JPG" alt="Gallery Sample 5" category="Sample 1">
+            <img src="./images/proj/g1.jpeg" alt="Gallery Sample 6" category="Sample 1">
+            <img src="./images/proj/g2.jpeg" alt="Gallery Sample 7" category="Sample 1">
+            <img src="./images/proj/g10.jpg" alt="Gallery Sample 8" category="Sample 1">
         </div>
-      </div>
+    </div>
+
     </section>
 
     <section id="logo" class="py-5">
-      <div class="row">
-        <div class="col-12 text-center">
-          <span><strong>BE ONE OF US</strong></span>
-          <h2 class="text-orange font-weight-bold pb-3">OUR PARTNERS</h2>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper text-center">
-              <div class="swiper-slide"><img src="./images/partners/CBIG.png" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"> </div>
-                <div class="swiper-slide"><img src="./images/partners/Cfc.png" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/jadine.jpeg" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/esco.png" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/Grainpro.jpeg" class="ximg-fluid"alt="" width="600" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/pot.png" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/proj19.png" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/thefreehand.jpeg" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/thehubcebu.jpeg" class="ximg-fluid"alt="" width="168" height="100" style="object-fit: cover;"></div>
-                <div class="swiper-slide"><img src="./images/partners/wfw.png" class="ximg-fluid"alt="" width="168" height="100"></div>
-                <div class="swiper-slide"><img src="./images/partners/wings.png" class="ximg-fluid"alt="" width="168" height="100"></div>
-                <div class="swiper-slide"><img src="./images/partners/freya.svg" class="ximg-fluid"alt="" width="600" height="100" style="object-fit: cover;"></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 text-center">
+            <span><strong>BE ONE OF US</strong></span>
+            <h2 class="text-orange font-weight-bold pb-3">OUR PARTNERS</h2>
+            <div class="swiper mySwiper pt-5">
+              <div class="swiper-wrapper text-center">
+                <div class="swiper-slide"><img src="./images/partners/CBIG.png" class="ximg-fluid"alt="" > </div>
+                  <div class="swiper-slide"><img src="./images/partners/Cfc.png" class="ximg-fluid"alt="" ></div>
+                  <div class="swiper-slide"><img src="./images/partners/jadine.jpeg" class="ximg-fluid"alt="" ></div>
+                  <div class="swiper-slide"><img src="./images/partners/esco.png" class="ximg-fluid"alt="" ></div>
+                  <div class="swiper-slide"><img src="./images/partners/Grainpro.jpeg" class="ximg-fluid"></div>
+                  <div class="swiper-slide"><img src="./images/partners/pot.png" class="ximg-fluid"alt="" ></div>
+                  <div class="swiper-slide"><img src="./images/partners/proj19.png" class="ximg-fluid"alt=""></div>
+                  <div class="swiper-slide"><img src="./images/partners/thefreehand.jpeg" class="ximg-fluid"alt=""></div>
+                  <div class="swiper-slide"><img src="./images/partners/thehubcebu.jpeg" class="ximg-fluid"alt="" ></div>
+                  <div class="swiper-slide"><img src="./images/partners/wfw.png" class="ximg-fluid"alt=""></div>
+                  <div class="swiper-slide"><img src="./images/partners/wings.png" class="ximg-fluid"alt="" ></div>
+                  <div class="swiper-slide"><img src="./images/partners/freya.svg" class="ximg-fluid"alt="" ></div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+  
           </div>
-
         </div>
       </div>
     </section>
@@ -518,68 +533,68 @@
           <div class="col-12 text-center">
             <span class="text-white"><strong>SUPPORT US</strong></span>
             <h2 class="text-orange font-weight-bold pb-5">Become a part of our story</h2>
-            <button class="btn btn-lg rounded bg-orange text-white">DONATE NOW</button>
+            <a href="./donate.html" class="btn btn-lg rounded bg-orange text-white">DONATE NOW</a>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="pt-5 pb-1 text-lg-start text-center ">
+    <footer class="pt-5 pb-1 text-lg-start text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 py-3">
             <p class="text-center"><span>Get In <span>Touch</span> with Us </span></p>
-            <ul class="d-flex justify-content-center">
-              <li><a href="https://www.instagram.com/forourfarmers/" class="px-3"><span>Instagram</span></a></li>
-              <li><a href="https://www.facebook.com/forourfarmersph/" class="px-3"><span>Facebook</span></a></li>
-              <li><a href="https://twitter.com/forourfarmers" class="px-3"><span>Twitter</span></a></li>
+            <ul class="d-flex justify-content-center" style="color: #3F9538;">
+              <li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/forourfarmers/" class="px-3"></a></li>
+              <li><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com/forourfarmersph/" class="px-3"></a></li>
+              <li><i class="fa-brands fa-twitter"></i><a href="https://twitter.com/forourfarmers" class="px-3"></a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
-            <a class="me-2" href="#">
-              <img src="images/main_logo/fof_logo_1.png" class="pb-3" height="120" alt="TechnoFest" loading="lazy" style="margin-top: -1px;"/>
+            <a class="me-2" href="../index.html">
+              <img src="../images/main_logo/fof_logo_1.png" class="pb-3" height="120" alt="TechnoFest" loading="lazy" style="margin-top: -1px;"/>
               </a>
-              <p>
+              <p style="color: #3F9538;">
                 FOR OUR FARMERS’ LEARNING CENTER, 
                 BRGY. ANO, SAN CARLOS, 
                 PANGASINAN, 2420
               </p>
-              <div class="pb-3">
-                <span><a href="mailto:forourfarmers.org@gmail.com">forourfarmers.org@gmail.com</a></span>
+              <div class="pb-3" >
+                <span><a href="mailto:forourfarmers.org@gmail.com" style="color: #3F9538;">forourfarmers.org@gmail.com</a></span>
               </div>
               <div class="pb-3">
-                <span class="pb-3"><a href="tel:+630756368986">+63 (075) 636 8986</a></span>
+                <span class="pb-3"><a href="tel:+630756368986"  style="color: #3F9538;">+63 (075) 636 8986</a></span>
               </div>
           </div>
           <div class="col-lg-3 col-md-6">
               <p class="text-orange"><span><b>PROJECTS</b></span></p>
               <ul>
-                <li><a href="#"><span>Brigada Eskuwela</span></a></li>
-                <li><a href="#"><span>Gabay Program </span></a></li>
-                <li><a href="#"><span>Babali Media Literacy project </span></a></li>
-                <li><a href="#"><span>For our farmer's Scholarship </span></a></li>
-                <li><a href="#"><span>Project Sagip</span></a></li>
-                <li><a href="#"><span>Sponsor a Farmer</span></a></li>
+                <li><a href="../projects/brigada-eskuwela.html" style="color: #3F9538;"><span>Brigada Eskuwela</span></a></li>
+                <li><a href="../projects/gabay-program.html" style="color: #3F9538;"><span>Gabay Program </span></a></li>
+                <li><a href="../projects/Balibali-media-literacy-project.html" style="color: #3F9538;"><span>Balibali Media Literacy Project </span></a></li>
+                <li><a href="../projects/fof-iskolar.html" style="color: #3F9538;"><span>For Our Farmer's Scholarship </span></a></li>
+                <li><a href="../projects/project-sagip.html" style="color: #3F9538;"><span>Project Sagip</span></a></li>
+                <li><a href="../projects/sponsor-a-farmer.html" style="color: #3F9538;"><span>Sponsor a Farmer</span></a></li>
               </ul>
           </div>
           <div class="col-lg-3 col-md-6">
             <p class="text-orange"><span><b>DONATION CHANNELS</b></span></p>
             <ul>
-              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Paypal </span></a></li>
-              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Landbank </span></a></li>
-              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">BPI </span></a></li>
-              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">BDO </span></a></li>
-              <li><a href="#"><img src="images/main_logo/fof_logo_1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Gcash </span></a></li>
+              <li><a href="../donate.html" style="color: #3F9538;"><img src="../images/bank/paypal1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Paypal </span></a></li>
+              <li><a href="../donate.html" style="color: #3F9538;"><img src="../images/bank/landbank1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Landbank </span></a></li>
+              <li><a href="../donate.html" style="color: #3F9538;"><img src="../images/bank/bpi1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">BPI </span></a></li>
+              <li><a href="../donate.html" style="color: #3F9538;"><img src="../images/bank/bdo1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">BDO </span></a></li>
+              <li><a href="../donate.html" style="color: #3F9538;"><img src="../images/bank/gcash1.png" class="img-fluid" alt="" width="32" height="32" style="object-fit:cover"><span class="p-2">Gcash </span></a></li>
             </ul>
           </div>
           <div class="col-lg-3 col-md-6">
             <p class="text-orange"><span><b>QUICKLINKS</b></span></p>
             <ul>
-              <li><a href="#"><span>Home </span></a></li>
-              <li><a href="#"><span>Projects </span></a></li>
-              <li><a href="#"><span>Partners</span></a></li>
-              <li><a href="#"><span>Contact Us</span></a></li>
-              <li><a href="#"><span>Donate Now </span></a></li>
+              <li><a href="../index.html" style="color: #3F9538;"><span>Home </span></a></li>
+              <li><a href="../projects.html" style="color: #3F9538;"><span>Projects </span></a></li>
+              <li><a href="../partners.html" style="color: #3F9538;"><span>Partners</span></a></li>
+              <li><a href="../contact.html" style="color: #3F9538;"><span>Contact Us</span></a></li>
+              <li><a href="../donate.html" style="color: #3F9538;"><span>Donate Now </span></a></li>
             </ul>
           </div>
           <div class="col-12 text-center">
@@ -599,6 +614,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.counterup/1.0/jquery.counterup.min.js"></script>
     <script src="./js/swiper.js"></script>
+    <script src="./js/main.js"></script>
     
   </body>
 </html>
