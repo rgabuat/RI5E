@@ -127,6 +127,10 @@ i {
     background-size: cover;
 } */
 
+.mask,.rgba-black-light
+{
+  background-color: rgba(0, 0, 0, 0.515);
+}
 #ads
 {
     background-image: url("../images/donate-now.jpg");

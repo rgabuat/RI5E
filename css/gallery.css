@@ -1,8 +1,12 @@
 .accordion-container{
     position: relative;
-    max-width: 500px;
     height: auto;
     margin: 10px auto;
+  }
+
+  .accordion-item:first-of-type
+  {
+    border-radius: 0!important;
   }
   .accordion-container > h2{
     text-align: center;
@@ -17,6 +21,7 @@
     width: 100%;
     height: auto;
     background-color: #f5f5f5;
+    margin:10px;
   }
   .set > a{
     display: block;
@@ -34,12 +39,11 @@
     margin-top: 2px;
   }
   .set > a.active{
-    background-color:#3399cc;
+    background-color:#3f9538;
     color: #fff;
   }
   .content{
     background-color: #fff;
-    border-bottom: 1px solid #ddd;
     display:none;
   }
   .content p{
