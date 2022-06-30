@@ -193,6 +193,7 @@ ul
 ul li
 {
   list-style:none;
+  padding: 5px;
 }
 
 /* cards */
