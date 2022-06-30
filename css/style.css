@@ -54,7 +54,7 @@ i {
 
 #ads
 {
-    background-image: url("../images/proj/donate.jpg");
+    background-image: url("../images/donate-now.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -64,9 +64,24 @@ i {
     background: linear-gradient(-70deg, #FFFF 60%, rgba(0, 0, 0, 0) 60%), url("../images/proj/mission_vision.png");
 }
 
+#viSion
+{
+  background: linear-gradient(-70deg, #EC872A 60%, rgba(0, 0, 0, 0) 60%);
+}
+
+#whyUs
+{
+  background: linear-gradient(-70deg, #fff 60%, rgba(236, 135, 42, 1) 0%);
+}
+
+#brigadaDonate
+{
+  background: linear-gradient(-70deg, #fff 60%, rgba(63, 149, 56, 1) 0%);
+}
+
 #callToAction
 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.815)),       url("../images/proj/calltoaction.jpg") center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.815)), url("../images/proj/calltoaction.jpg") center center no-repeat;
 
 /*  below values are optional */
  	background-attachment:fixed;
